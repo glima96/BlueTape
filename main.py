@@ -83,7 +83,7 @@ def get_percentuais(link):
 
 
 def get_dados(xpath,navegador):
-    tamanho_do_vetor=0
+    nome="nome"
     vet=[]
     for i in range(15):
         print(i + 1)
@@ -97,18 +97,11 @@ def get_dados(xpath,navegador):
             ("NÃO")
         sleep(1)
 
+    nome=vet[len(vet)-2]
+
+    nota=vet[len(vet)-1]
 
 
-
-
-    nome=vet[1]
-
-    nota=vet[2]
-
-    if tamanho_do_vetor==4:
-        nome = vet[2]
-
-        nota = vet[3]
 
 
 
